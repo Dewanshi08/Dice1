@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.dell.scarnesdice.MainActivity">
+
+    <TextView
+        android:id="@+id/user_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score : "
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/YScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_score"
+        android:layout_alignBottom="@+id/user_score"
+        android:layout_toEndOf="@+id/user_score"
+        android:layout_toRightOf="@+id/user_score"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/comp_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textview8"
+        android:layout_marginLeft="97dp"
+        android:layout_marginStart="97dp"
+        android:layout_toEndOf="@+id/textview8"
+        android:layout_toRightOf="@+id/textview8"
+        android:text="Computer Score :" />
+
+    <TextView
+        android:id="@+id/CScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/comp_score"
+        android:layout_toEndOf="@+id/comp_score"
+        android:layout_toRightOf="@+id/comp_score"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        app:srcCompat="@drawable/dice1"
+        android:layout_below="@+id/comp_score"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_score"
+        android:layout_alignStart="@+id/user_score"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="38dp"
+        android:text="ROLL" />
+
+    <Button
+        android:id="@+id/hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roll"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="HOLD" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hold"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/hold"
+        android:layout_toRightOf="@+id/hold"
+        android:text="RESET" />
+</RelativeLayout>
